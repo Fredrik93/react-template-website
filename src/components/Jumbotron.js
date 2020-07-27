@@ -4,10 +4,10 @@ import styled from 'styled-components'
 import boatImage from '../assets/boat.jpg';
 
 const Styles = styled.div`
-    .jumbotron {
+    .jumbo {
         background: url(${boatImage}) no-repeat fixed bottom;
         background-size: cover;
-        color: #ccc;
+        color: #efef;
         height: 200px;
         position: relative;
  //says if it should be on top or bottom compared to other divs
