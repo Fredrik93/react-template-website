@@ -7,6 +7,7 @@ import { NoMatch } from './NoMatch'
 import { Layout } from './components/Layout'
 import { NavigationBar } from './components/NavigationBar'
 import { Jumbotron } from './components/Jumbotron'
+
 function App() {
     return (
         //this creates a wrapper, so we dont need a div to wrap all my components.  
@@ -14,6 +15,7 @@ function App() {
             <NavigationBar />
             <Jumbotron />
             <Layout>
+        <cardTest />
                 <Router>
                     <Switch>
                         <Route exact path="/" component={Home} />
