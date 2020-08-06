@@ -3,11 +3,11 @@ import {Button, Card} from 'react-bootstrap'
 import boat from '../assets/boat.jpg';
 
 
-export const Projects = () => (
+export const Projects = (props) => (
     <Card style={{ width: '18rem' }}>
     <Card.Img variant="top" src={boat} />
     <Card.Body>
-      <Card.Title>Card Title</Card.Title>
+      <Card.Title>{props.title}</Card.Title>
       <Card.Text>
         Some quick example text to build on the card title and make up the bulk of
         the card's content.
@@ -16,3 +16,4 @@ export const Projects = () => (
     </Card.Body>
   </Card>
 )
+
