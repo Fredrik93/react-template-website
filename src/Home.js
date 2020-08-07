@@ -14,8 +14,17 @@ const Styles = styled.div`
    }
     `;
 
-const name = <Projects title="agnart" />;
-
+const cardinfo ={ title:["jomiola", "agnart", "dindin"] };
+const cardInfo = {
+    card1: {
+        title: "Jomiola",
+        description: "Consulting"
+    },
+    card2: {
+        title: "Agnart",
+        description: "art & design"
+    }
+}
 export const Home = () => (
     <Styles>
             <div>
@@ -25,9 +34,9 @@ export const Home = () => (
             </p>
             <Jumbotron />
             <div className='rows'>
-     <div className='row'> <Projects /></div>
-     <div className='row'><Projects /></div>
-     <div className='row'><Projects /></div>
+     <div className='row'> <Projects title={cardInfo.card1.title} description={cardInfo.card1.description}/></div>
+     <div className='row'> <Projects title={cardInfo.card2.title} description={cardInfo.card2.description}/></div>
+     <div className='row'> <Projects title={cardInfo.card1.title}/></div>
  </div>
     </div>
     </Styles>
