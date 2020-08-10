@@ -14,7 +14,6 @@ const Styles = styled.div`
    }
     `;
 
-const cardinfo ={ title:["jomiola", "agnart", "dindin"] };
 const cardInfo = {
     card1: {
         title: "Jomiola",
@@ -28,7 +27,6 @@ const cardInfo = {
 export const Home = () => (
     <Styles>
             <div>
-
         <h2>Headline yo ! </h2>
         <p>Bacon ipsum dolor amet strip steak capicola hamburger andouille, pig pork bresaola meatball porchetta burgdoggen. Ham hock meatloaf pastrami chicken pig, chislic kevin jowl landjaeger hamburger. Chislic sirloin frankfurter, short ribs capicola short loin ham hock meatball sausage jowl prosciutto shankle pancetta chicken. Turducken pastrami pork cow, shankle cupim tail chuck frankfurter bresaola shoulder leberkas pork loin.
             </p>
@@ -36,7 +34,7 @@ export const Home = () => (
             <div className='rows'>
      <div className='row'> <Projects title={cardInfo.card1.title} description={cardInfo.card1.description}/></div>
      <div className='row'> <Projects title={cardInfo.card2.title} description={cardInfo.card2.description}/></div>
-     <div className='row'> <Projects title={cardInfo.card1.title}/></div>
+     <div className='row'> <Projects/></div>
  </div>
     </div>
     </Styles>

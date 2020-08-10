@@ -4,6 +4,7 @@ import boat from '../assets/boat.jpg';
 
 
 export const Projects = (props) => (
+  
     <Card style={{ width: '18rem' }}>
     <Card.Img variant="top" src={boat} />
     <Card.Body>
